@@ -1,2 +1,1 @@
-import './style/style.sass';
-console.log('salut');
+console.log('caca');
