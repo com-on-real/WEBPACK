@@ -2,17 +2,13 @@
 
 ## 1 MODE
 ### PRODUCTION
-	```
-	npm run prod
-	```
+	```npm run prod```
 	rajoute un hash à tous les fichiers pour éviter les problèmes de cash avec les mises à jours
 	créer un seul fichier css et js minifier dans /public
 	creer un fichier manifest.json avec le nom des fichiers
 
 ### DEVELOPEMENT
-	```
-	npm run dev
-	```
+	```npm run dev```
 	creer un seul fichier css et js lisible dans /public
 	creer un fichier manifest.json avec le nom des fichiers
 
