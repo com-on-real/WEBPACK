@@ -1,11 +1,11 @@
 <?php
+session_start();
 header('Access-Control-Allow-Origin: *');
 $debug = 'false'; // all / simple / false
+define('ROOT', dirname(__DIR__));
 
-require('ini.php');
-session_start();
-
-require('controller/controller.php');
+require(ROOT . '/config/ini.php');
+require(ROOT.'/controller/controller.php');
 
 //define('DOMAINE', $domaine);
 define('RACINE', 'https://');

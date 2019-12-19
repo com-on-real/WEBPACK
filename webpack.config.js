@@ -33,9 +33,9 @@ let config = {
 		app: ['./src/style/style.sass', './src/js/index.js']
 	},
 	output: {
-		path: path.resolve('./public'),
+		path: path.resolve('./public/assets'),
 		filename: dev ? '[name].js' : '[name].[chunkhash:4].js',
-		publicPath: '/public/'
+		publicPath: '/public/assets/'
 	},
 	resolve: {
 		alias: {

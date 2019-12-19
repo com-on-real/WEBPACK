@@ -1,9 +1,9 @@
 <?php
 // Decode manifest name
-$json_manifest = file_get_contents('public/manifest.json');
+$json_manifest = file_get_contents(ROOT.'/public/assets/manifest.json');
 $json_manifest = json_decode($json_manifest, true);
-$css = $json_manifest['app.css'];
-$js = $json_manifest['app.js'];
+$css = str_replace('/public/', '', $json_manifest['app.css']);
+$js = str_replace('/public/', '', $json_manifest['app.js']);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -14,12 +14,6 @@ $js = $json_manifest['app.js'];
 	<title><?= $title ?></title>
 </head>
 <body>
-<ul class="menu">
-  <li><a href="#">One</a></li>
-  <li><a href="#">Two</a></li>
-  <li><a href="#">Three</a></li>
-  <li><a href="#">Four</a></li>
-</ul>
 	<?= $content ?>
 	<script type="text/javascript" src="<?= $js ?>"></script>
 </body>
